@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 file_id = "1cfYTfamo1JXPMxs9kLPxw-8fusZlVXCp"
 output = "model_3_rand_forest.joblib"
 
-gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False, use_cookies=False)
 
 # Charger le modèle
 model = joblib.load(output)
