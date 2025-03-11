@@ -4,13 +4,13 @@ import pandas as pd
 import joblib
 from sklearn.preprocessing import LabelEncoder
 
-#file_id = "1cfYTfamo1JXPMxs9kLPxw-8fusZlVXCp"
-#output = "model_3_rand_forest.joblib"
+file_id = "1cfYTfamo1JXPMxs9kLPxw-8fusZlVXCp"
+output = "model_3_rand_forest.joblib"
 
-#gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
 
 # Charger le modèle
-model = joblib.load('model_3_rand_forest.joblib')
+model = joblib.load(output)
 
 # Charger le scaler
 scaler = joblib.load('scaler_2.joblib')
